@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Your CSS styles here */
+
+        .target-section {
+            /* Other styles */
+            opacity: 0; /* Initially hide sections with opacity */
+            transition: opacity 0.5s ease; /* Smooth transition for opacity change */
+        }
+
+        .show-section {
+            opacity: 1; /* Make section visible by changing opacity */
+        }
+
+        /* Other CSS styles */
+
+    </style>
+</head>
+<body>
+    <!-- Your HTML content here -->
+
+    <script>
+        // JavaScript code here
+        const flags = [
+            "albania.jpg", "austria.jpg", "bel.jpg", "czech.jpg", "croatia.jpg",
+            "denmark.jpg", "england.jpg", "france.jpg", "georgia.jpg", "ger.jpg",
+            "hungary.jpg", "italy.jpg", "ned.jpg", "poland.jpg", "port.jpg",
+            "rom.jpg", "scot.jpg", "serbia.jpg", "slovakia.jpg", "slovenia.jpg",
+            "spain.jpg", "swit.jpg", "turkey.jpg", "ukraine.jpg"
+        ];
+        let currentIndex = 0;
+        const flagContainer = document.getElementById('flag-container');
+        const prevButton = document.getElementById('prev-btn');
+        const nextButton = document.getElementById('next-btn');
+        const flagLink = document.getElementById('flag-link');
+        const targetSections = document.querySelectorAll('.target-section');
+
+        function changeFlag(direction) {
+            currentIndex += direction;
+            if (currentIndex < 0) {
+                currentIndex = flags.length - 1;
+            } else if (currentIndex >= flags.length) {
+                currentIndex = 0;
+            }
+            flagContainer.style.backgroundImage = `url('${flags[currentIndex]}')`;
+
+            // Hide all target sections
+            targetSections.forEach(section => section.classList.remove('show-section'));
+        }
+
+        // Initial flag display
+        flagContainer.style.backgroundImage = `url('${flags[currentIndex]}')`;
+
+        // Event listeners for buttons
+        prevButton.addEventListener('click', () => changeFlag(-1));
+        nextButton.addEventListener('click', () => changeFlag(1));
+
+        // Event listener for the flag link
+        flagLink.addEventListener('click', () => {
+            // Hide all target sections
+            targetSections.forEach(section => section.classList.remove('show-section'));
+            // Display the target section corresponding to the current flag
+            const targetSection = document.getElementById(`target-section-${currentIndex}`);
+            targetSection.classList.add('show-section');
+            // Scroll to the target section
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Event listener for scroll event
+        window.addEventListener('scroll', () => {
+            if (window.scrollY === 0) {
+                // Hide all target sections when scrolled to the top
+                targetSections.forEach(section => section.classList.remove('show-section'));
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+     
+    th{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-decoration: wavy;
+        width:125px;
+        text-align: center;
+        font-size: 28px;
+        border:  solid #C039F8;
+        border-collapse: collapse;
+    }
+    td {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-decoration: wavy;
+        font-size: 24px;
+        text-align: center;
+        border:solid #64bfa4;
+        border-collapse: collapse;
+    }
+<table>
+     <tr>
+        
+            <th>Name</th>
+            <th>Age</th>
+            <th>Club</th>
+            <th>Shirt No.</th>
+        </tr>
+        <tr>
+            <td>Manuel Neuer<div class = "image-hover"></td></div>
+            <td>38</td>
+            <td>Bayern Munchen</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Marc-Andre Ter Stegen<br><div class = "image-hover2"></td></div>
+            <td>32</td>
+            <td>Barcelona</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Alexander Nubel<br><div class = "image-hover3"></td></div>
+            <td>27</td>
+            <td>Stuttgart</td>
+            <td>33</td>
+            <tr>
+                <td>Manuel Neuer<div class = "image-hover"></td></div>
+                <td>38</td>
+                <td>Bayern Munchen</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Marc-Andre Ter Stegen<br><div class = "image-hover2"></td></div>
+                <td>32</td>
+                <td>Barcelona</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Alexander Nubel<br><div class = "image-hover3"></td></div>
+                <td>27</td>
+                <td>Stuttgart</td>
+                <td>33</td>
+                
+            </tr>
+        </tr>
+    </table>
+.p {
+        
+   
+    font-family: Chiller;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    text-shadow: 1.5px 1.5px 1.5px #AA336A;
+    }
+
+    .albania { color: black; text-shadow: 1px 1px 1px white; background-image: linear-gradient(to right, rgba(255,0,0,0), #FF2D2D, rgba(255,0,0,0)); }
+        .austria { color: black; text-shadow: 1px 1px 1px white; background-image: linear-gradient(red, white, red); }
+        .belgium {  background-image: linear-gradient(to right, black, red, yellow); }
+        .czech-republic { background-image: linear-gradient(blue, red); }
+        .croatia {  background-image: linear-gradient(blue, white, red); }
+        .denmark { background-image: linear-gradient(red, white); }
+        .england { background-image: linear-gradient(white, red); }
+        .france { background-image: linear-gradient(blue, white, red); }
+        .georgia {  background-image: linear-gradient(white, red); }
+        .germany {  background-image: linear-gradient(black, red, yellow); }
+        .hungary { color: white; background-image: linear-gradient(red, white, green); }
+        .italy { color: white; background-image: linear-gradient(green, white, red); }
+        .netherlands { color: white; background-image: linear-gradient(orange, white, blue); }
+        .poland { color: white; background-image: linear-gradient(white, red); }
+        .portugal { color: white; background-image: linear-gradient(green, red); }
+        .romania { color: white; background-image: linear-gradient(blue, yellow, red); }
+        .scotland { color: white; background-image: linear-gradient(blue, white); }
+        .serbia { color: white; background-image: linear-gradient(red, blue, white); }
+        .slovakia { color: white; background-image: linear-gradient(blue, white, red); }
+        .slovenia { color: white; background-image: linear-gradient(blue, white, red); }
+        .spain { color: white; background-image: linear-gradient(red, yellow); }
+        .switzerland { color: white; background-image: linear-gradient(red, white); }
+        .turkey { color: black; text-shadow: 1px 1px 1px white; background-image: linear-gradient(to right, white, red , white) ; }
+        .ukraine { color: white; background-image: linear-gradient(blue, yellow); }
+
+        <div class="txt">
+&nbsp;&nbsp;&nbsp;&nbsp;Manuel Neuer &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; Marc Andre Ter Stegen &nbsp;  Alexander Nubel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #22 
+&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#20 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #22 </div>
